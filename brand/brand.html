@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600;800;900&display=block" rel="stylesheet">
+<style>
+body{margin:0;background:#0b1020;font-family:Inter,sans-serif}
+.p{width:800px;height:800px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 38%,#1b2a52,#0b1020 70%)}
+.grid{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 2px,transparent 2px 60px),repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 2px,transparent 2px 60px)}
+.globe{position:absolute;left:50%;top:50%;width:560px;height:560px;transform:translate(-50%,-50%);border-radius:50%;border:6px solid rgba(255,255,255,.14)}
+.globe:before,.globe:after{content:'';position:absolute;inset:0;border-radius:50%;border:4px solid rgba(255,255,255,.10)}
+.globe:before{transform:scaleX(.45)}.globe:after{transform:scaleY(.45)}
+.mono{position:absolute;left:0;right:0;top:170px;text-align:center;font-family:Anton;font-size:330px;line-height:1;color:#fff;letter-spacing:-6px;text-shadow:0 10px 40px rgba(0,0,0,.6)}
+.mono b{color:#e63946}
+.bar{position:absolute;left:210px;right:210px;top:555px;height:16px;background:#ffd166;border-radius:8px}
+.word{position:absolute;left:0;right:0;top:590px;text-align:center;font-family:Anton;font-size:64px;letter-spacing:10px;color:#fff}
+.word b{color:#e63946}
+.p2 .lens{position:absolute;left:150px;top:150px;width:430px;height:430px;border-radius:50%;border:34px solid #fff;box-sizing:border-box;background:rgba(230,57,70,.08)}
+.p2 .handle{position:absolute;left:520px;top:520px;width:200px;height:56px;background:#e63946;border-radius:28px;transform:rotate(45deg);transform-origin:0 50%}
+.p2 .in{position:absolute;left:150px;top:150px;width:430px;height:430px;display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:150px;color:#ffd166;letter-spacing:2px}
+.b{width:2560px;height:1440px;position:relative;overflow:hidden;background:linear-gradient(120deg,#0b1020 0%,#14213d 55%,#1b2a52 100%)}
+.b .safe{position:absolute;left:507px;top:508px;width:1546px;height:423px;display:flex;align-items:center;gap:60px}
+.b .logo{font-family:Anton;font-size:200px;line-height:1;color:#fff;letter-spacing:2px}
+.b .logo b{color:#e63946}
+.b .div{width:10px;height:260px;background:#ffd166;border-radius:5px}
+.b .tl{font-weight:900;font-size:74px;line-height:1.08;color:#fff}
+.b .tl span{color:#ffd166}
+.b .sub{font-weight:700;font-size:40px;color:#c9d3ea;margin-top:16px}
+.b .map{position:absolute;inset:0;opacity:.18;background:
+ radial-gradient(circle at 18% 30%,#e63946 0 6px,transparent 7px),radial-gradient(circle at 30% 62%,#ffd166 0 6px,transparent 7px),radial-gradient(circle at 52% 25%,#fff 0 5px,transparent 6px),radial-gradient(circle at 63% 55%,#e63946 0 6px,transparent 7px),radial-gradient(circle at 78% 35%,#ffd166 0 6px,transparent 7px),radial-gradient(circle at 86% 70%,#fff 0 5px,transparent 6px),
+ repeating-linear-gradient(0deg,rgba(255,255,255,.25) 0 1px,transparent 1px 90px),repeating-linear-gradient(90deg,rgba(255,255,255,.25) 0 1px,transparent 1px 90px)}
+.b .ticker{position:absolute;left:0;right:0;top:1000px;height:70px;background:#e63946;display:flex;align-items:center;gap:40px;padding-left:520px;font-weight:900;font-size:34px;color:#fff;letter-spacing:2px;white-space:nowrap}
+.b .ticker i{font-style:normal;color:#ffd166}
+</style></head><body>
+<div class="p" id="p1"><div class="grid"></div><div class="globe"></div><div class="mono">D<b>N</b></div><div class="bar"></div><div class="word">DIGED <b>NEWS</b></div></div>
+<div class="p p2" id="p2"><div class="grid"></div><div class="lens"></div><div class="handle"></div><div class="in">DN</div></div>
+<div class="b" id="bn"><div class="map"></div>
+ <div class="safe"><div class="logo">DIGED<br><b>NEWS</b></div><div class="div"></div><div><div class="tl">The world is changing.<br><span>Understand why.</span></div><div class="sub">World news explained simply · Shorts daily</div></div></div>
+ <div class="ticker">USA <i>•</i> CHINA <i>•</i> RUSSIA <i>•</i> EUROPE <i>•</i> MIDDLE EAST <i>•</i> ECONOMY <i>•</i> WHAT IT MEANS FOR YOU</div>
+</div>
+</body></html>

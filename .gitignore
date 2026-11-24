@@ -1,0 +1,8 @@
+shorts/*/px/
+shorts/*/*.mp4
+shorts/*/*.mp3
+shorts/*/*.wav
+shorts/*/frames/
+shorts/*/prev/
+*.f32
+__pycache__/
