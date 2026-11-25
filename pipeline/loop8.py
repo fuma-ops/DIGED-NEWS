@@ -15,6 +15,7 @@ for ln in S['lines']:
         body.append(f'<div class="who">{ph}<div class="name">{ln[1]}</div></div>')
     else: body.append(f'<div class="{k}">{ln[1]}</div>')
 html = open(f'{R}/templates/loop8.html').read().replace('__TAG__', S.get('tag', 'BREAKING')).replace('__BODY__', '\n'.join(body)).replace('__CREDIT__', S.get('credit', ''))
+if S.get('css'): html = html.replace('</head>', f"<style>{S['css']}</style></head>", 1)  # couleurs propres à ce Short (anti contenu répétitif)
 open(f'{d}/loop.html', 'w').write(html)
 shot = f"""const {{ chromium }} = require('playwright'); const path = require('path');
 const [, , from, to, dir] = process.argv;

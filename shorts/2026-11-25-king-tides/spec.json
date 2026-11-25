@@ -1,0 +1,17 @@
+{
+ "tag": "KING TIDES",
+ "bg": [["px/191093.mp4", 4.2, 4.4], ["px/13000.mp4", 0.3, 3.6]],
+ "photo": null,
+ "credit": "Sources: National Weather Service, KCRA, The Weather Channel · Illustrative footage: Pixabay",
+ "css": ".y,.big{color:#4cc9f0}.brand b{color:#4cc9f0}.tag{background:#0077b6}.sep{background:#4cc9f0}",
+ "lines": [
+  ["s", "The ocean just walked into"],
+  ["q", "<span class=y>San Francisco</span> streets"],
+  ["big", "+2.7 FT"],
+  ["s", "above a normal high tide"],
+  ["sep"],
+  ["stamp", "Near record"],
+  ["end", "Weather Service: “approaching the highest tide ever recorded.” 😳<br>Next high tide: <span class=y>Thursday.</span>"]
+ ],
+ "output": "diged-king-tides.mp4"
+}
