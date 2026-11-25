@@ -47,3 +47,14 @@ Exiger ≥ 97 % de mots retrouvés. Regarder 4 images du MP4 final (accroche, mi
 
 ## 8. Livrer
 Envoyer la vidéo au propriétaire avec : titre (≤ 100 caractères, finit par #shorts), description (faits + sources + hashtags), tags YouTube, commentaire épinglé, meilleure heure (17h-20h Maroc = midi-15h New York). Ne pas committer les MP4 (voir .gitignore).
+
+## Format « titre seul » 8 s en boucle (validé le 25/11/2026) — `pipeline/loop8.py`
+Une seule page, tout visible du début à la fin, sans voix, musique « suspense » en boucle (`pipeline/music_loop.py`).
+- `shorts/<date>-<slug>/spec.json` (voir l'en-tête de loop8.py) puis `/usr/bin/python3 pipeline/loop8.py shorts/<date>-<slug>`.
+- **Images cohérentes avec le titre (règle du propriétaire)** : le fond montre littéralement les mots-clés du titre
+  (explosion + armée US → vraie explosion + drapeau US ; un joueur → sport du joueur). Jamais un fond abstrait (fumée, couleurs).
+  Enchaîner 2 clips (`"bg": [[clip, début, durée], ...]`, 8 s au total) : l'action forte au début de la boucle (sur le coup de musique).
+  Interdits : guerre réelle d'un autre pays, nucléaire, ou toute image qui ferait croire à autre chose que l'info.
+- Personne citée : petit médaillon rond (`"photo"`), photo libre (CC0 / domaine public US), crédit dans `credit`.
+- Toujours regarder une planche de 4-5 images de la vidéo finale avant envoi.
+- Fichier ≤ 5 Mo (Make gratuit) : loop8.py plafonne le débit.

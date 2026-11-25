@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600;800;900&display=block" rel="stylesheet">
+<style>
+html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden;font-family:Inter,sans-serif;color:#fff}
+.dim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.75) 0,rgba(0,0,0,.25) 22%,rgba(0,0,0,.2) 55%,rgba(0,0,0,.7) 100%)}
+.box .s,.box .q,.box .end,.box .name{text-shadow:0 4px 18px rgba(0,0,0,.95),0 0 6px rgba(0,0,0,.9)}
+.brand{position:absolute;top:120px;left:70px;font-family:Anton;font-size:44px;letter-spacing:2px}.brand b{color:#e63946}
+.tag{position:absolute;top:124px;right:70px;background:#e63946;font-weight:900;font-size:30px;padding:8px 18px;letter-spacing:2px;border-radius:6px}
+.box{position:absolute;left:50px;right:50px;top:250px;height:1260px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.s{font-weight:900;font-size:44px;letter-spacing:5px;text-transform:uppercase;margin-top:10px}
+.q{font-family:Anton;font-size:104px;line-height:1.05;text-transform:uppercase;margin-top:12px;text-shadow:0 8px 40px rgba(0,0,0,.8)}
+.big{font-family:Anton;font-size:250px;line-height:1;color:#ffd166;margin-top:10px}
+.y{color:#ffd166}
+.later{font-family:Anton;font-size:92px;color:#ffd166;margin-top:40px;letter-spacing:2px}
+.sep{width:640px;height:6px;background:#e63946;border-radius:3px;margin:38px 0 40px}
+.who{display:flex;align-items:center;gap:36px}.ph{width:250px;height:250px;border-radius:50%;background-position:center;background-size:cover;border:8px solid #ffd166;box-shadow:0 10px 40px rgba(0,0,0,.6);flex-shrink:0}
+.name{font-family:Anton;font-size:150px;line-height:.98;text-transform:uppercase;text-shadow:0 8px 40px rgba(0,0,0,.8)}
+.who .name{text-align:left}
+.stamp{display:inline-block;font-family:Anton;font-size:170px;line-height:1;color:#e63946;border:13px solid #e63946;border-radius:18px;padding:6px 32px 0;margin-top:30px;text-transform:uppercase;background:rgba(0,0,0,.4)}
+.end{font-weight:900;font-size:56px;margin-top:50px;line-height:1.25;background:rgba(0,0,0,.45);padding:14px 28px;border-radius:18px}
+.credit{position:absolute;left:70px;right:70px;bottom:250px;font-weight:600;font-size:22px;opacity:.6}
+</style></head><body>
+<div class="dim"></div><div class="brand">DIGED<b> NEWS</b></div><div class="tag" id="tag">__TAG__</div>
+<div class="box">__BODY__</div>
+<div class="credit">__CREDIT__</div>
+<script>
+// Animations périodiques (2 s / 8 s) : la vidéo boucle sans raccord.
+window.render = (t) => {
+  const b = (t % 2) / 2, hit = Math.exp(-b * 9), g = 0.5 + 0.5 * Math.sin(2 * Math.PI * t / 8);
+  document.querySelectorAll('.stamp').forEach((e) => { e.style.transform = `rotate(-6deg) scale(${1 + 0.06 * hit})`; e.style.boxShadow = `0 0 ${20 + 60 * hit}px rgba(230,57,70,${0.25 + 0.5 * hit})`; });
+  document.querySelectorAll('.later,.big').forEach((e) => { e.style.textShadow = `0 0 ${18 + 30 * g}px rgba(255,209,102,${0.25 + 0.35 * g})`; });
+  document.querySelectorAll('.ph').forEach((e) => { e.style.boxShadow = `0 0 ${20 + 40 * g}px rgba(255,209,102,${0.3 + 0.4 * g})`; });
+  document.getElementById('tag').style.opacity = 0.75 + 0.25 * Math.cos(2 * Math.PI * t);
+};
+</script></body></html>
