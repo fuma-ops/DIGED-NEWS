@@ -1,0 +1,44 @@
+{
+ "tag": "NFL",
+ "bg": [
+  [
+   "px/201676.mp4",
+   1.0,
+   4.2
+  ],
+  [
+   "px/5375.mp4",
+   0.5,
+   3.8
+  ]
+ ],
+ "photo": "rface.jpg",
+ "credit": "Sources: ESPN, AP, USA Today, Yahoo Sports · Photo: Cramerwiki (CC0) · Footage: Pixabay",
+ "css": ".y,.big{color:#ffb612}.brand b{color:#ffb612}.tag{background:#ffb612;color:#000}.sep{background:#ffb612}.ph{border-color:#ffb612}",
+ "lines": [
+  [
+   "s",
+   "He went on live TV and said his coach"
+  ],
+  [
+   "q",
+   "<span class=y>fell asleep</span> in a meeting"
+  ],
+  [
+   "sep"
+  ],
+  [
+   "who",
+   "Aaron<br>Rodgers"
+  ],
+  [
+   "stamp",
+   "Cut."
+  ],
+  [
+   "end",
+   "Steelers released him the same day 😳<br><span class=y>His claim</span>, on The Pat McAfee Show."
+  ]
+ ],
+ "output": "diged-rodgers-cut.mp4"
+}
