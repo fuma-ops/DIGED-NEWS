@@ -1,0 +1,15 @@
+{
+ "tag": "FIFA",
+ "bg": [["px/201748.mp4", 0.5, 4.2], ["px/239973.mp4", 1.0, 3.8]],
+ "photo": null,
+ "credit": "Sources: AP, Reuters, The Athletic (NYT), NBC News · Footage: Pixabay",
+ "css": ".y,.big{color:#3dff8b}.brand b{color:#3dff8b}.tag{background:#3dff8b;color:#000}.sep{background:#3dff8b}",
+ "lines": [
+  ["s", "Hackers posed as FIFA staff"],
+  ["q", "and got into <span class=y>FIFA's data</span>"],
+  ["sep"],
+  ["stamp", "Hacked."],
+  ["end", "FIFA confirms a “criminal cyberattack” 😳<br><span class=y>What did they take?</span> “Personal and business information.”"]
+ ],
+ "output": "diged-fifa-hacked.mp4"
+}
